@@ -8,9 +8,7 @@ import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
 
-/**
- * Created by 黄煜辉 on 2017/9/20.
- */
+
 
 public class App extends Application {
     @Override

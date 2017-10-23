@@ -7,9 +7,7 @@ import android.content.Intent;
 import cd.edu.gdmec.android.zcr.App;
 
 
-/**
- * Created by 黄煜辉 on 2017/9/20.
- */
+
 
 public class BootCompleteReciever extends BroadcastReceiver{
     private static final String TAG=BootCompleteReciever.class.getSimpleName();

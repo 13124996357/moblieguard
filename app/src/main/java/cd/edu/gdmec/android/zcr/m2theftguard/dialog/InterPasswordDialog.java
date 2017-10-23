@@ -13,9 +13,6 @@ import android.widget.TextView;
 import cd.edu.gdmec.android.zcr.R;
 
 
-/**
- * Created by 黄煜辉 on 2017/9/20.
- */
 
 public class InterPasswordDialog extends Dialog implements View.OnClickListener{
     private TextView mTitleTV;

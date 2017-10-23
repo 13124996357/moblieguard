@@ -20,9 +20,7 @@ import cd.edu.gdmec.android.zcr.m2theftguard.entity.ContactInfo;
 import cd.edu.gdmec.android.zcr.m2theftguard.utils.ContactInfoParser;
 
 
-/**
- * Created by 黄煜辉 on 2017/9/20.
- */
+
 
 public class ContactSelectActivity extends AppCompatActivity implements View.OnClickListener{
     private ListView mListView;

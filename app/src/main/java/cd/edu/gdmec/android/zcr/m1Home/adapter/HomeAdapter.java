@@ -10,9 +10,7 @@ import android.widget.TextView;
 import cd.edu.gdmec.android.zcr.R;
 
 
-/**
- * Created by 黄煜辉 on 2017/9/16.
- */
+
 
 public class HomeAdapter extends BaseAdapter{
     int[] imageId={R.drawable.safe, R.drawable.callmsgsafe,R.drawable.app,

@@ -15,9 +15,7 @@ import cd.edu.gdmec.android.zcr.m2theftguard.ContactSelectActivity;
 import cd.edu.gdmec.android.zcr.m2theftguard.entity.ContactInfo;
 
 
-/**
- * Created by 黄煜辉 on 2017/9/20.
- */
+
 
 public class ContactAdapter extends BaseAdapter {
     private List<ContactInfo> contactInfos;

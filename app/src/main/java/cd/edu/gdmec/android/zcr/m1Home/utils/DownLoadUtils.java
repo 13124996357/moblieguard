@@ -5,9 +5,7 @@ import android.content.Context;
 import android.net.Uri;
 import android.webkit.MimeTypeMap;
 
-/**
- * Created by 黄煜辉 on 2017/9/12.
- */
+
 
 public class DownLoadUtils {
     public void downloadApk(String url, String targetFile, Context context){

@@ -16,9 +16,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.telephony.SmsManager;
 
-/**
- * Created by 黄煜辉 on 2017/9/20.
- */
+
 
 public class GPSLocationService extends Service{
     private LocationManager lm;

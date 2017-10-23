@@ -17,9 +17,7 @@ import cd.edu.gdmec.android.zcr.R;
 import cd.edu.gdmec.android.zcr.m2theftguard.service.GPSLocationService;
 
 
-/**
- * Created by 黄煜辉 on 2017/9/20.
- */
+
 
 public class SmsLostFindReciver extends BroadcastReceiver{
     private static final String TAG=SmsLostFindReciver.class.getSimpleName();

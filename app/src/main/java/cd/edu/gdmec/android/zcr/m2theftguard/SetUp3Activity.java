@@ -13,9 +13,6 @@ import android.widget.Toast;
 import cd.edu.gdmec.android.zcr.R;
 
 
-/**
- * Created by 黄煜辉 on 2017/9/20.
- */
 
 public class SetUp3Activity extends BaseSetUpActivity implements View.OnClickListener{
     private EditText mInputPhone;
