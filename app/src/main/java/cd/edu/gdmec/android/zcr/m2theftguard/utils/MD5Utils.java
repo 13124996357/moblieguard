@@ -3,11 +3,6 @@ package cd.edu.gdmec.android.zcr.m2theftguard.utils;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-
-
-
-
-
 public class MD5Utils {
   public static String encode(String text){
       try{

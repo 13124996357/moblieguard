@@ -1,17 +1,14 @@
 package cd.edu.gdmec.android.zcr.m2theftguard.adapter;
 
 import android.content.Context;
-
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-
 import android.widget.TextView;
 
 import java.util.List;
 
 import cd.edu.gdmec.android.zcr.R;
-import cd.edu.gdmec.android.zcr.m2theftguard.ContactSelectActivity;
 import cd.edu.gdmec.android.zcr.m2theftguard.entity.ContactInfo;
 
 
@@ -25,10 +22,8 @@ public class ContactAdapter extends BaseAdapter {
         this.contactInfos=contactInfos;
         this.context=context;
     }
+//contactInfos
 
-    public ContactAdapter(List<ContactInfo> systemContacts, ContactSelectActivity context) {
-
-    }
 
     @Override
     public int getCount() {
@@ -36,17 +31,17 @@ public class ContactAdapter extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int position) {
-        return contactInfos.get(position);
+    public Object getItem(int i) {
+        return contactInfos.get(i);
     }
 
     @Override
-    public long getItemId(int position) {
-        return position;
+    public long getItemId(int i) {
+        return i;
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int i, View convertView, ViewGroup parent) {
         ViewHolder holder=null;
         if (convertView==null){
             convertView = View.inflate(context, R.layout.item_list_contact_select,null);
@@ -57,8 +52,8 @@ public class ContactAdapter extends BaseAdapter {
         }else{
             holder=(ViewHolder)convertView.getTag();
         }
-        holder.mNameTV.setText(contactInfos.get(position).name);
-        holder.mPhoneTv.setText(contactInfos.get(position).phone);
+        holder.mNameTV.setText(contactInfos.get(i).name);
+        holder.mPhoneTv.setText(contactInfos.get(i).phone);
         return convertView;
     }
     static class ViewHolder{

@@ -4,8 +4,8 @@ import android.app.admin.DevicePolicyManager;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
@@ -14,12 +14,10 @@ import android.widget.GridView;
 import android.widget.Toast;
 
 import cd.edu.gdmec.android.zcr.R;
-
 import cd.edu.gdmec.android.zcr.m1Home.adapter.HomeAdapter;
 import cd.edu.gdmec.android.zcr.m2theftguard.LostFindActivity;
 import cd.edu.gdmec.android.zcr.m2theftguard.dialog.InterPasswordDialog;
 import cd.edu.gdmec.android.zcr.m2theftguard.dialog.SetUpPasswordDialog;
-
 import cd.edu.gdmec.android.zcr.m2theftguard.receiver.MyDeviceAdminReciever;
 import cd.edu.gdmec.android.zcr.m2theftguard.utils.MD5Utils;
 
@@ -82,7 +80,7 @@ public class HomeActivity extends AppCompatActivity {
                 }
             }
         });
-        policyManager=(DevicePolicyManager) getSystemService(DEVICE_POLICY_SERVICE);
+       policyManager=(DevicePolicyManager) getSystemService(DEVICE_POLICY_SERVICE);
         componentName=new ComponentName(this, MyDeviceAdminReciever.class);
         boolean active=policyManager.isAdminActive(componentName);
         if (!active){

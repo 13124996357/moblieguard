@@ -1,42 +1,24 @@
 package cd.edu.gdmec.android.zcr.m2theftguard;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.ToggleButton;
-
-import java.util.List;
 
 import cd.edu.gdmec.android.zcr.R;
 
 
 
 
-public class LostFindActivity extends AppCompatActivity /*implements View.OnClickListener*/{
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lost_find);
-        startSetup1Activity();
-    }
-
-    private void startSetup1Activity() {
-        Intent intent = new Intent(LostFindActivity.this,SetUp1Activity.class);
-        startActivity(intent);
-        finish();
-    }
-
-    /*private TextView mSafePhoneTV;
+public class LostFindActivity extends AppCompatActivity implements View.OnClickListener{
+    private TextView mSafePhoneTV;
     private RelativeLayout mInterSetupRL;
     private SharedPreferences msharedPrefences;
     private ToggleButton mToggleButton;
@@ -111,5 +93,5 @@ public class LostFindActivity extends AppCompatActivity /*implements View.OnClic
                 break;
         }
 
-    }*/
+    }
 }

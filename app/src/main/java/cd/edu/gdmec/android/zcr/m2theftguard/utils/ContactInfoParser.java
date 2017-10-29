@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.text.TextUtils;
 import java.util.ArrayList;
 import java.util.List;
+
 import cd.edu.gdmec.android.zcr.m2theftguard.entity.ContactInfo;
 
 
@@ -58,8 +59,10 @@ public class ContactInfoParser {
         if (mCursor!=null){
             while (mCursor.moveToNext()){
                 ContactInfo info=new ContactInfo();
+
                 int nameFieldColumnIndex=mCursor.getColumnIndex("name");
                 info.name=mCursor.getString(nameFieldColumnIndex);
+
                 int numberFieldColumIndex=mCursor.getColumnIndex("number");
                 info.phone=mCursor.getString(numberFieldColumIndex);
                 infos.add(info);

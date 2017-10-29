@@ -3,7 +3,6 @@ package cd.edu.gdmec.android.zcr.m2theftguard;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
@@ -36,13 +35,13 @@ public class ContactSelectActivity extends AppCompatActivity implements View.OnC
                     }
                     break;
             }
-        }
+        };
     };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+       requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_contact_select);
         initView();
     }

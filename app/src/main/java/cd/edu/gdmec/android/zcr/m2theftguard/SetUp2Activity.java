@@ -49,7 +49,8 @@ public class SetUp2Activity extends BaseSetUpActivity implements View.OnClickLis
     @Override
     public void showNext() {
         if (!isBind()){
-            Toast.makeText(this,"您还没有绑定SIM卡!",Toast.LENGTH_SHORT).show();
+            //LENGTH_LONG
+            Toast.makeText(this,"您还没有绑定SIM卡!",Toast.LENGTH_LONG).show();
             return;
         }
         startActivityAndFinishShelf(SetUp3Activity.class);
@@ -75,10 +76,10 @@ public class SetUp2Activity extends BaseSetUpActivity implements View.OnClickLis
             SharedPreferences.Editor edit=sp.edit();
             edit.putString("sim",simSerialNumber);
             edit.commit();
-            Toast.makeText(this,"SIM卡绑定成功!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"SIM卡绑定成功!",Toast.LENGTH_LONG).show();
             mBindSIMBtn.setEnabled(false);
         }else {
-            Toast.makeText(this,"SIM卡已经绑定!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"SIM卡已经绑定!",Toast.LENGTH_LONG).show();
             mBindSIMBtn.setEnabled(false);
         }
     }

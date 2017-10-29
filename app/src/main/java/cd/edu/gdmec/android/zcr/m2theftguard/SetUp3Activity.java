@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
@@ -16,7 +15,7 @@ import cd.edu.gdmec.android.zcr.R;
 
 public class SetUp3Activity extends BaseSetUpActivity implements View.OnClickListener{
     private EditText mInputPhone;
-    int i;
+    //int i;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -37,7 +36,7 @@ public class SetUp3Activity extends BaseSetUpActivity implements View.OnClickLis
     public void showNext(){
         String safePhone=mInputPhone.getText().toString().trim();
         if (TextUtils.isEmpty(safePhone)){
-            Toast.makeText(this,"请输入安全号码",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"请输入安全号码",Toast.LENGTH_LONG).show();
             return;
         }
         SharedPreferences.Editor edit=sp.edit();

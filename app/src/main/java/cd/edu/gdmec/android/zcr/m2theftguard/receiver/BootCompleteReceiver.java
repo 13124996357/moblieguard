@@ -6,13 +6,12 @@ import android.content.Intent;
 
 import cd.edu.gdmec.android.zcr.App;
 
+public class BootCompleteReceiver extends BroadcastReceiver {
 
-
-
-public class BootCompleteReciever extends BroadcastReceiver{
-    private static final String TAG=BootCompleteReciever.class.getSimpleName();
     @Override
     public void onReceive(Context context, Intent intent) {
-        ((App) context.getApplicationContext()).correctSIM();
+        // an Intent broadcast.
+        ((App)(context.getApplicationContext())).correctSIM();
+       // throw new UnsupportedOperationException("Not yet implemented");
     }
 }

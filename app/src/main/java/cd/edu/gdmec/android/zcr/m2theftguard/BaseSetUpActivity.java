@@ -16,6 +16,18 @@ import cd.edu.gdmec.android.zcr.R;
 public abstract class BaseSetUpActivity extends AppCompatActivity{
     public SharedPreferences sp;
     private GestureDetector mGestureDetector;
+    public abstract void showNext();
+    public abstract void showPre();
+    @Override
+    public boolean onTouchEvent(MotionEvent event){
+        mGestureDetector.onTouchEvent(event);
+        return super.onTouchEvent(event);
+    }
+    public void startActivityAndFinishShelf(Class<?> cls){
+        Intent intent=new Intent(this,cls);
+        startActivity(intent);
+        finish();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,17 +56,6 @@ public abstract class BaseSetUpActivity extends AppCompatActivity{
                     }
                 });
     }
-    public abstract void showNext();
-    public abstract void showPre();
-    @Override
-    public boolean onTouchEvent(MotionEvent event){
-        mGestureDetector.onTouchEvent(event);
-        return super.onTouchEvent(event);
-    }
-    public void startActivityAndFinishShelf(Class<?> cls){
-    Intent intent=new Intent(this,cls);
-    startActivity(intent);
-    finish();
-}
+
 
 }
